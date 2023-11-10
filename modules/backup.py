@@ -1,5 +1,6 @@
 """Backup module"""
-import json, os
+import os
+import json
 
 from urllib.request import urlopen
 from modules.config import config_map

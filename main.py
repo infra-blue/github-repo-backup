@@ -1,5 +1,6 @@
 """Main module"""
-import schedule, os
+import os
+import schedule
 from modules.backup import backup_task
 from modules.config import config_map
 
@@ -11,7 +12,6 @@ def main() -> None:
 
     while True:
         schedule.run_pending()
-
 
 if __name__ == "__main__":
     main()
