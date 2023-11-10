@@ -1,0 +1,5 @@
+user: 'USERNAME'
+
+skip_forks: false
+
+auto_update_time: 5
