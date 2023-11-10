@@ -37,18 +37,18 @@ $ git clone git@github.com:infra-blue/github-repo-backup.git
 
    - On Windows:
      ```bash
-     $ docker run -v "C:\path\to\your\settings.yaml:/github-repo-backup/config/settings.yaml" -v "C:\path-to-your-backup-folder":"/github-repo-backup/backup" github-repo-backup
+     $ docker run -v "C:\path\to\your\settings.yaml":"/github-repo-backup/config/settings.yaml" -v "C:\path-to-your-backup-folder":"/github-repo-backup/backup" github-repo-backup
      ```
      
    - On Linux:
      ```bash
-     $ docker run -v "/path/to/your/settings.yaml:/github-repo-backup/config/settings.yaml" -v "path-to-your-backup-folder":"/github-repo-backup/backup" github-repo-backup
+     $ docker run -v "/path/to/your/settings.yaml":"/github-repo-backup/config/settings.yaml" -v "path-to-your-backup-folder":"/github-repo-backup/backup" github-repo-backup
      ```
 
 ### Pull image from remote repository and run
 
 ```bash
-$ docker run --name github-repo-backup -v "/local/path/to/settings.yml":/github-repo-backup/config/settings.yml -v "path-to-your-backup-folder":"/github-repo-backup/backup" -t ghcr.io/infra-blue/github-repo-backup:main
+$ docker run --name github-repo-backup -v "/local/path/to/settings.yaml":"/github-repo-backup/config/settings.yaml" -v "path-to-your-backup-folder":"/github-repo-backup/backup" -t ghcr.io/infra-blue/github-repo-backup:main
 ```
 
 ### Running Natively
