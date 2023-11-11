@@ -1,5 +1,9 @@
 *.dist
 *.git
+.github
+.gitignore
+LICENSE
+README.md
 Dockerfile
 
 # Byte-compiled / optimized / DLL files
@@ -118,5 +122,5 @@ dmypy.json
 .pyre/
 
 # Custom
-config/settings.yaml
+config/settings.yaml.dist
 .vscode
